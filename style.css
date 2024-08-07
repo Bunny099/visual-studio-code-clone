@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+/* incase you want header shadow 
+header{
+    border-bottom: 0.1px solid gray;
+
+}
+    */
+
+nav {
+  
+  display: flex;
+  margin: 0 200px;
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+  
+
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+#logo-nm {
+  color: #e9eaeb;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.nav-links a {
+  text-decoration: none;
+  padding: 10px;
+  color: #9ba3b4;
+  font-weight: 600;
+}
+.nav-links a:hover {
+  color: whitesmoke;
+}
+#nav-srch {
+  padding: 7px;
+  background-color: #0e0e0e;
+  margin-bottom: 7px;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+#nav-btn {
+  padding: 6px 22px;
+  margin-right: 15px;
+  background-color: #0078d4;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
+#mid-hd {
+  padding: 20px 460px;
+  color: gray;
+  font-size: 1rem;
+}
+#mid-hd a {
+  color: #0880db;
+  font-size: 1rem;
+  font-weight: 300;
+  padding-right: 2px;
+}
+
+.main-div {
+  display: flex;
+margin-bottom: 70px;
+  justify-content: center;
+}
+.main-left-div {
+  padding: 115px 22px;
+}
+.main-left-div input {
+  background-color: #363434;
+  padding: 8px 37px;
+  border-radius: 70px;
+  margin-left: 2px;
+  margin-bottom: 30px;
+}
+.main-left-div h1 {
+  color: white;
+  font-size: 3rem;
+  padding-bottom: 4px;
+}
+.main-left-div button {
+  padding: 15px 40px;
+  background-color: #0078d4;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: 21px;
+}
+.main-left-div ul a {
+  color: #0880db;
+}
+.main-left-div ul span {
+  color: gray;
+}
+.main-right-div {
+  padding: 20px;
+}
+button:hover {
+  background-color: #036fc2;
+}
+#nav-btn:hover {
+  background-color:  #036fc2;
+}
+
+/* this is second section  */
+.sec-main-div{
+  background-color:#0e0e0e;
+  display: flex;
+  margin: 0 170px;
+
+
+}
+.sec-main-div-left{
+ 
+ width: 35%;
+ padding: 25px 30px;
+
+}
+.sec-main-div-left h1{
+  padding-top: 8px;
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
+}
+.sec-main-div-left p{
+  font-size: 16px;
+  color: #9ba3b4;
+  padding-top: 8px;
+}
+.sec-main-div-right{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  padding: 20px;
+
+}
+
+.sec-main-div-right div{
+  display: flex;
+ 
+  align-items: center;
+  margin-right: 130px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+
+}
+.sec-main-div-right div img{
+  height: 30px;
+  width: 30px;
+  
+  
+}
+.sec-main-div-right div span{
+  color: #9ba3b4;
+  
+}
+
+/* third main contain like card for extension and all */
+/* change margin if needed for right in third main div */
+.third-main-div{
+  margin: 30px 200px;
+  display: flex;
+  background-color:#0e0e0e;
+  margin-top: 120px;
+}
+.third-main-left-div{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+
+}
+.third-main-left-div h1{
+  color: #e9eaeb;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.third-main-left-div p{
+  font-size: 16px;
+  color: #9ba3b4;
+  font-weight: 500;
+  padding-bottom: 10px;
+
+
+}
+
+.third-main-left-div a{
+  font-size: 16px;
+  font-weight: 500;
+  color: #0078d4;
+}
+.third-main-right-div{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+
+
+}
+
+.card{
+  background-color:#171717;
+  border: 0.2px solid black;
+  border-radius: 10px;
+  display: flex;
+  width: 255px;
+  height: 104px;
+  padding: 30px;
+  margin-left: 30px;
+  margin-bottom: 8px;
+  margin-top: 5px;
+  
+}
+.card img{
+  width: auto;
+  height: 40px;
+
+}
+
+.card div h3{
+  font-size: 1rem;
+  color:#e9eaeb;
+  padding-left: 12px;
+}
+.card div p{
+  padding-left: 12px;
+  font-size: 0.8rem;
+  color: #9ba3b4;
+}
+.card:hover{
+  border: 0.1px solid rgb(158, 158, 158);
+  cursor: pointer;
+}
+
+/* fourth main div css left side content and right ride image this code can be use in next two section because that two section have same content */
+
+.fourth-main-div{
+  display: flex;
+  margin: 100px 200px;
+  background-color:#0e0e0e;
+  padding: 1px;
+
+}
+
+.fourth-main-div-left{
+  margin-right: 6px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+
+}
+.fourth-main-div-left h2{
+  font-size: 30px;
+  font-weight: 600;
+  color: #e9eaeb;
+  line-height: 150%;
+
+}
+.fourth-main-div-left p{
+  font-size: 16px;
+  font-weight: 500;
+  color:#9ba3b4;
+  line-height: 130%;
+  padding-top: 8px;
+  padding-bottom: 9px;
+}
+
+.fourth-main-div-left a{
+  font-size: 16px;
+  font-weight: 500;
+  color: #0078d4;
+
+}
+.fourth-main-div-left h3{
+  padding-top: 16px;
+  font-size: 16px;
+  color: #9ba3b4;
+  font-weight: 500;
+}
+
+/* css for sixth contain */
+.sixth-main-div{
+  background-color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 500px;
+  
+}
+.sixth-main-div h2{
+  font-size: 35px;
+  font-weight: 600;
+  color: #e9eaeb;
+  margin-bottom: 10px;
+}
+.sixth-main-div p{
+  font-size: 20px;
+  font-weight: 500;
+  color:#9ba3b4 ;
+}
+
+/* seventh section css cards and grid templates */
+.seventh-main-div{
+  background-color:#0e0e0e;
+  margin: 0 200px;
+  padding: 15px;
+
+}
+.seventh-main-div div{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  margin-top: 20px;
+
+}
+.seventh-main-div div .card12{
+  background-color:#171717;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  border-radius: 7px;
+  padding: 25px;
+
+}
+
+.seventh-main-div div .card12:hover{
+  border: 0.01px solid gray;
+  cursor: pointer;
+  
+}
+.card12 h3{
+  
+  font-size:16px ;
+  font-weight: 600;
+  color:#e9eaeb ;
+  margin-top: 15px;
+
+
+}
+
+.card12 p{
+  font-size: 14px;
+  font-weight: 500;
+  color:#9ba3b4 ;
+  margin-top: 10px;
+
+}
+
+.card12 img{
+  height: 48px;
+  width: 48px;
+  background-color: rgba(39, 39,39,1);
+  padding: 5px;
+  border-radius: 7px;
+  
+}
+
+
+/* footer section */
+.footer{
+  margin: 80px 200px;
+  
+}
+.footer-first-div{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 12px;
+
+}
+.footer-left-side img{
+  margin-right: 14px;
+}
+
+.footer-sec-div{
+
+
+}
+
+.footer-sec-div a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #9ba3b4;
+  padding-right: 14px;
+
+}
