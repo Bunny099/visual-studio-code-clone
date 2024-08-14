@@ -56,6 +56,19 @@ nav div {
   font-weight: bold;
   border-radius: 8px;
 }
+
+@media (max-width: 1360px) {
+  nav {
+    margin: 0 20px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .nav-links {
+    display: none;
+  }
+}
+/* main div heading */
 #mid-hd {
   padding: 20px 460px;
   color: gray;
@@ -68,6 +81,22 @@ nav div {
   padding-right: 2px;
 }
 
+@media (max-width: 1458px) {
+  #mid-hd {
+    display: none;
+  }
+}
+.main-div {
+  padding-top: 15px;
+}
+
+@media (max-width:1170px){
+  #mid-image{
+    width: 500px;
+  }
+}
+
+/* main-div csss */
 .main-div {
   display: flex;
   margin-bottom: 70px;
@@ -114,11 +143,27 @@ button:hover {
   background-color: #036fc2;
 }
 
+@media (max-width: 1217px) {
+  .main-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-left-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-right-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* this is second section  */
 .sec-main-div {
   background-color: #0e0e0e;
   display: flex;
-  margin: 0 170px;
+  padding: 0 170px;
 }
 .sec-main-div-left {
   width: 35%;
@@ -158,10 +203,33 @@ button:hover {
   color: #9ba3b4;
 }
 
+@media (max-width: 1333px) {
+  .sec-main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+  }
+  .sec-main-div-left {
+    width: 80%;
+  }
+}
+@media (max-width:800px){
+  .sec-main-div-left{
+    width: 70%;
+  }
+  .sec-main-div-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 20px;
+  }
+}
 /* third main contain like card for extension and all */
 /* change margin if needed for right in third main div */
 .third-main-div {
-  margin: 30px 200px;
+  padding: 30px 200px;
   display: flex;
   background-color: #0e0e0e;
   margin-top: 120px;
@@ -228,6 +296,26 @@ button:hover {
   cursor: pointer;
 }
 
+@media (max-width: 1333px) {
+  .third-main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px;
+  }
+  .third-main-left-div {
+    width: 55%;
+    padding-bottom: 14px;
+  }
+}
+@media (max-width:895px){
+  .third-main-right-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
 /* fourth main div css left side content and right ride image this code can be use in next two section because that two section have same content */
 
 .fourth-main-div {
@@ -270,6 +358,21 @@ button:hover {
   font-weight: 500;
 }
 
+@media (max-width: 1333px) {
+  .fourth-main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 50px;
+  }
+  .fourth-main-left-div {
+    width: 55%;
+  }
+  .fourth-main-div-left h3 {
+    padding-bottom: 15px;
+  }
+}
 /* css for sixth contain */
 .sixth-main-div {
   background-color: #0e0e0e;
@@ -290,6 +393,14 @@ button:hover {
   color: #9ba3b4;
 }
 
+@media (max-width: 1333px) {
+  .sixth-main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 100px;
+  }
+}
 /* seventh section css cards and grid templates */
 .seventh-main-div {
   background-color: #0e0e0e;
@@ -337,6 +448,19 @@ button:hover {
   border-radius: 7px;
 }
 
+@media (max-width: 1333px) {
+  .seventh-main-div {
+    margin: 0 50px;
+  }
+}
+@media (max-width: 900px) {
+  .seventh-main-div div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 20px;
+  }
+}
 /* footer section */
 .footer {
   margin: 80px 200px;
@@ -360,4 +484,37 @@ button:hover {
   font-weight: 500;
   color: #9ba3b4;
   padding-right: 14px;
+}
+
+@media (max-width: 1050px) {
+  .footer {
+    margin: 50px 60px;
+  }
+}
+
+
+@media (max-width:835px){
+  #fourth-image-cn{
+    width: 500px;
+  }
+}
+
+@media (max-width:615px){
+  #nav-srch{
+    display: none;
+  } 
+  #mid-image{
+    display: none;
+  }
+  .main-left-div{
+    padding: 20px;
+  }
+  .third-main-right-div{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+  }
+  #fourth-image-cn{
+    width: 350px;
+  }
 }
