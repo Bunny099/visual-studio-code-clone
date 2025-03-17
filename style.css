@@ -47,7 +47,7 @@ nav div {
   margin-bottom: 7px;
   margin-right: 20px;
   border-radius: 4px;
-  border-outline:none;
+  outline-style:none;
 }
 #nav-btn {
   padding: 6px 22px;
